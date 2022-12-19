@@ -1,0 +1,18 @@
+body {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+}
+.nav {
+    display: flex;
+}
+.background {
+  background-image: url(/picture/index-background-desktop\ 2.png);
+  height: 302px;
+  z-index: 999;
+}
+.product {
+    z-index: 9999;
+    margin-top: -139px;
+}
+
