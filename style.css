@@ -1,19 +1,22 @@
 @media (min-width: 320px) {
   .container {
-    width: 280px;
+    margin: 0 auto;
   }
 }
 @media (min-width: 768px) {
   .container {
-    width: 740;
+    margin: 0 auto;
   }
 }
 @media (min-width: 1440px) {
   .container {
-    width: 1380px;
+    margin: 0 auto;
   }
 }
-body {
+.body {
   margin: 0;
   padding: 0;
+}
+.nav-images {
+  display: flex;
 }
