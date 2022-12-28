@@ -1,6 +1,7 @@
-@media (min-width: 320px) {
+/* @media (min-width: 320px) {
   .container {
     margin: 0 auto;
+    
   }
 }
 @media (min-width: 768px) {
@@ -12,11 +13,8 @@
   .container {
     margin: 0 auto;
   }
-}
+}  */
 .body {
   margin: 0;
   padding: 0;
-}
-.nav-images {
-  display: flex;
 }
