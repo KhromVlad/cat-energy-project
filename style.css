@@ -35,8 +35,10 @@
   color: white;
   font-weight: 400;
   font-size: 36px;
+  line-height: 36px;
   position: absolute;
-  margin: 22px;
+  margin: 20px 36px;
+  font-family: 'OswaldNew', sans-serif;
 }
 .intro__text {
   text-align: center;
@@ -44,9 +46,10 @@
   font-weight: 400;
   font-size: 14px;
 position: absolute;
-  margin: auto 31px;
-  top: 210px;
+  margin: auto 61px;
+  top: 205px;
   text-transform: uppercase;
+  font-family: 'OswaldNew', sans-serif;
 }
 .intro__image {
   position: relative;
@@ -58,6 +61,7 @@ top: 235px;
 margin: 20px;
 }
 .intro__button {
+  font-family: 'OswaldNew', sans-serif;
   width: 280px;
   height: 40px;
   background-color: #68B738;
@@ -92,6 +96,9 @@ margin-top: 140px;
   display: flex;
   list-style: none;
 }
+.description-item__text-title {
+  margin: auto 20px;
+}
 .description-list__image {
   border: 20px solid #68B738;
   background-color: #68B738;
@@ -104,12 +111,13 @@ margin-top: 140px;
  padding: 20px;
 }
 .report-intro__text-capital {
+  font-family: 'OswaldNew', sans-serif;
   font-weight: 400;
   font-size: 36px;
   text-align: left;
-  
 }
 .report-intro__text {
+  font-family: 'OswaldNew', sans-serif;
   font-weight: 400;
   font-size: 14px;
   text-align: left;
@@ -119,6 +127,7 @@ margin-top: 140px;
   justify-content: center;
 }
 .progress__text {
+  font-family: 'OswaldNew', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -128,44 +137,28 @@ margin-top: 140px;
   margin: 30px;
 }
 .address-text {
+  font-family: 'OswaldNew', sans-serif;
   display: flex;
   padding: 20px;
 }
 .address-text__text-capital {
+  font-family: 'OswaldNew', sans-serif;
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
   
 }
 .address-text__text {
+  font-family: 'OswaldNew', sans-serif;
   font-weight: 400;
   font-size: 14px;
 }
 .address__image {
   width: 100%;
 }
-
-/* .intro__image {
-  position: relative;
-  width: auto;
+@font-face {
+  font-family: "OswaldNew";
+  src: url(/fonts/Oswald-VariableFont_wght.ttf) format("truetype");
 }
-.intro__text-capital {
-  
-  position: absolute;
-  top: 100px;
-  color: white;
-  font-weight: 400;
-  font-size: 36px;
-  text-align: center;
-
-}
-.intro__text {
-  position: absolute;
-  top: 200px;
-  color: white;
-  font-weight: 400;
-  font-size: 14px;
-  text-align: center;
-} */
 
 
