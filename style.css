@@ -24,13 +24,11 @@
   display: flex;
 }
 
-
 .intro-page {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
-  
 }
 .intro__text-capital {
   text-align: center;
@@ -40,56 +38,55 @@
   line-height: 36px;
   position: absolute;
   margin: 20px 36px;
-  font-family: 'OswaldNew', sans-serif;
+  font-family: "OswaldNew", sans-serif;
 }
 .intro__text {
   text-align: center;
   color: white;
   font-weight: 400;
   font-size: 14px;
-position: absolute;
+  position: absolute;
   margin: auto 61px;
   top: 205px;
   text-transform: uppercase;
-  font-family: 'OswaldNew', sans-serif;
+  font-family: "OswaldNew", sans-serif;
 }
 .intro__image {
   position: relative;
-
 }
 .intro__image1 {
-position: absolute;
-top: 235px;
-margin: 20px;
+  position: absolute;
+  top: 235px;
+  margin: 20px;
 }
 .intro__button {
-  font-family: 'OswaldNew', sans-serif;
+  font-family: "OswaldNew", sans-serif;
   width: 280px;
   height: 40px;
-  background-color: #68B738;
+  background-color: #68b738;
   font-weight: 400;
-font-size: 14px;
-line-height: 18px;
-border: 0px;
-margin: 20px;
-color: white;
-text-transform: uppercase;
-margin-top: 140px;
+  font-size: 14px;
+  line-height: 18px;
+  border: 0px;
+  margin: 20px;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 140px;
 }
 .product-item {
   margin: 20px;
   padding: 20px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 .product-item__image {
-  background-color: #68B738;
-  border: 10px solid #68B738;
-  border-radius: 40px; 
+  background-color: #68b738;
+  border: 10px solid #68b738;
+  border-radius: 40px;
 }
 .product-item__head {
- display: flex;
- width: auto;
- height: auto;
+  display: flex;
+  width: auto;
+  height: auto;
 }
 .description-list {
   padding: 0;
@@ -102,25 +99,25 @@ margin-top: 140px;
   margin: auto 20px;
 }
 .description-list__image {
-  border: 20px solid #68B738;
-  background-color: #68B738;
+  border: 20px solid #68b738;
+  background-color: #68b738;
   margin: 20px;
 }
 .example2 {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 .report-intro {
- padding: 20px;
+  padding: 20px;
 }
 .report-intro__text-capital {
-  font-family: 'OswaldNew', sans-serif;
+  font-family: "OswaldNew", sans-serif;
   font-weight: 400;
   font-size: 36px;
   text-align: left;
   margin-top: 0px;
 }
 .report-intro__text {
-  font-family: 'OswaldNew', sans-serif;
+  font-family: "OswaldNew", sans-serif;
   font-weight: 400;
   font-size: 14px;
   text-align: left;
@@ -130,7 +127,7 @@ margin-top: 140px;
   justify-content: center;
 }
 .progress__text {
-  font-family: 'OswaldNew', sans-serif;
+  font-family: "OswaldNew", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -140,19 +137,18 @@ margin-top: 140px;
   margin: 30px;
 }
 .address-text {
-  font-family: 'OswaldNew', sans-serif;
+  font-family: "OswaldNew", sans-serif;
   display: flex;
   padding: 20px;
 }
 .address-text__text-capital {
-  font-family: 'OswaldNew', sans-serif;
+  font-family: "OswaldNew", sans-serif;
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
-  
 }
 .address-text__text {
-  font-family: 'OswaldNew', sans-serif;
+  font-family: "OswaldNew", sans-serif;
   font-weight: 400;
   font-size: 14px;
 }
@@ -160,10 +156,9 @@ margin-top: 140px;
   width: 100%;
 }
 .footer-logo {
- display: flex;
- justify-content: center;
- border-bottom: 1px solid #d9d9d9;
- 
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #d9d9d9;
 }
 .footer-logo__image {
   margin: 40px auto;
@@ -189,5 +184,3 @@ margin-top: 140px;
   font-family: "OswaldNew";
   src: url(/fonts/Oswald-VariableFont_wght.ttf) format("truetype");
 }
-
-
