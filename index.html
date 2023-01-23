@@ -61,31 +61,34 @@
         <div class="container">
           <div class="product-item">
             <div class="product-item__head">
-              <img
-                src="/images/cat-slim.png"
-                alt="кот"
-                class="product-item__image"
-              />
-
-              <h2 class="product-item__text">Похудение</h2>
+              <div class="product-item__image-content">
+                <img
+                  src="/images/cat-slim.png"
+                  alt="кот"
+                  class="product-item__image-slim"
+                />
+              </div>
+              <h2 class="product-item__text-capital">Похудение</h2>
             </div>
-            <p class="product-item__text">
+            <p class="product-item__text-info">
               Ваш кот весит больше собаки и почти утратил способность лазить по
               деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
               сбросить лишний вес.
             </p>
-            <p class="produict-item__text">каталог slim</p>
+            <p class="product-item__text">каталог slim</p>
           </div>
           <div class="product-item">
             <div class="product-item__head">
-              <img
-                src="/images/cat-pro.png"
-                alt="пума"
-                class="product-item__image"
-              />
-              <h2 class="product-item__text">Набор массы</h2>
+              <div class="product-item__image-content">
+                <img
+                  src="/images/cat-pro.png"
+                  alt="пума"
+                  class="product-item__image-pro"
+                />
+              </div>
+              <h2 class="product-item__text-capital">Набор массы</h2>
             </div>
-            <p class="product-item__text">
+            <p class="product-item__text-info">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat
               Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
@@ -98,45 +101,61 @@
           <h1 class="description-item__text-title">Как это работает</h1>
           <ul class="description-list">
             <li class="description-list__item">
-              <img
-                src="/images/icon-leaf.svg"
-                alt="лист"
-                class="description-list__image"
-              />
-              <p>
+              <div class="descriptiom-list__item-image">
+                <img
+                  src="/images/icon-leaf.svg"
+                  alt="лист"
+                  class="description-list__image"
+                  width="30px"
+                  height="30px"
+                />
+              </div>
+              <p class="description-list__item-text">
                 Функциональное питание содержит только полезные питательные
                 вещества.
               </p>
             </li>
             <li class="description-list__item">
-              <img
-                src="/images/icon-tub.svg"
-                alt="колба"
-                class="description-list__image"
-              />
-              <p>
+              <div class="descriptiom-list__item-image">
+                <img
+                  src="/images/icon-tub.svg"
+                  alt="колба"
+                  class="description-list__image"
+                  width="30px"
+                  height="30px"
+                />
+              </div>
+              <p class="description-list__item-text">
                 Выпускается в виде порошка, который нужно лишь залить кипятком и
                 готово.
               </p>
             </li>
             <li class="description-list__item">
-              <img
-                src="/images/icon-eat.svg"
-                alt="приборы"
-                class="description-list__image"
-              />
-              <p>
+              <div class="descriptiom-list__item-image">
+                <img
+                  src="/images/icon-eat.svg"
+                  alt="приборы"
+                  class="description-list__image"
+                  width="30px"
+                  height="30px"
+                />
+              </div>
+              <p class="description-list__item-text">
                 Замените один-два приема обычной еды на наше функциональное
                 питание.
               </p>
             </li>
             <li class="description-list__item">
-              <img
-                src="/images/icon-alarm.svg"
-                alt="будильник"
-                class="description-list__image"
-              />
-              <p>
+              <div class="descriptiom-list__item-image">
+                <img
+                  src="/images/icon-alarm.svg"
+                  alt="будильник"
+                  class="description-list__image"
+                  width="30px"
+                  height="30px"
+                />
+              </div>
+              <p class="description-list__item-text">
                 Уже через месяц наслаждайтесь изменениями к лучшему вашего
                 питомца!
               </p>
@@ -160,12 +179,22 @@
             </div>
             <div class="result">
               <div class="result-item">
-                <h2 class="result-item__text">5 кг</h2>
-                <p class="result-item__text">снижение веса</p>
+                <h2 class="result-item__text-capital">5 кг</h2>
+                <div class="result-item__text-info">
+                  <p class="result-item__text">
+                    снижение <br \ />
+                    веса
+                  </p>
+                </div>
               </div>
               <div class="result-item">
-                <h2 class="result-item__text">60 дней</h2>
-                <p class="result-item__text">затрачено времени</p>
+                <h2 class="result-item__text-capital">60 дней</h2>
+                <div class="result-item__text-info">
+                  <p class="result-item__text">
+                    затрачено <br \ />
+                    времени
+                  </p>
+                </div>
               </div>
             </div>
             <div class="progress">
@@ -175,8 +204,20 @@
                 alt="кот"
                 class="progress__image"
               />
-              <p class="progress__text">было</p>
-              <p class="progress__text">стало</p>
+<div class="progress__button">
+  <p class="progress__button-text">Было</p>
+              <form>
+                <div class="progress__radiobutton">
+                  <label for="radiobutton"
+                    ><input type="radio" id="radiobutton" name="button"
+                  /></label>
+                  <label for="radiobutton"
+                    ><input type="radio" id="radiobutton" name="button"
+                  /></label>
+                </div>
+              </form>
+              <p class="progress__button-text">Стало</p>
+            </div>
             </div>
           </div>
         </div>

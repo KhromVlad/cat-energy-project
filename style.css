@@ -78,10 +78,44 @@
   padding: 20px;
   background-color: #f2f2f2;
 }
-.product-item__image {
+.product-item__text {
+  font-family: "OswaldNew", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.product-item__text-capital {
+  font-family: "OswaldNew", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  margin: 5px 20px;
+}
+.product-item__text-info {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.product-item__image-pro {
+  position: absolute;
+  top: 10px;
+  right: -8px;
+}
+.product-item__image-slim {
+  position: absolute;
+  top: -2px;
+  right: 5px;
+}
+.product-item__image-content {
+  border: 1px solid #68b738;
   background-color: #68b738;
-  border: 10px solid #68b738;
-  border-radius: 40px;
+  border-radius: 30px;
+  width: 48px;
+  height: 48px;
+  position: relative;
 }
 .product-item__head {
   display: flex;
@@ -96,12 +130,27 @@
   list-style: none;
 }
 .description-item__text-title {
+  font-family: "OswaldNew", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
   margin: auto 20px;
 }
-.description-list__image {
-  border: 20px solid #68b738;
-  background-color: #68b738;
+.descriptiom-list__item-image {
+  padding: 20px;
   margin: 20px;
+  background-color: #68b738;
+  text-align: center;
+}
+.description-list__image {
+  width: 30px;
+  height: 30px;
+}
+.description-list__item-text {
+  font-family: "Ariasl" sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 20px;
 }
 .example2 {
   background-color: #f2f2f2;
@@ -126,6 +175,30 @@
   display: flex;
   justify-content: center;
 }
+.result-item {
+  text-align: center;
+  margin: 5px;
+}
+.result-item__text-capital {
+  border: 1px solid #d9d9d9;
+  padding: 20px 5px;
+  border-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+.result-item__text-info {
+  position: relative;
+}
+.result-item__text {
+  font-family: "Arial" sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  position: absolute;
+  top: -45px;
+}
 .progress__text {
   font-family: "OswaldNew", sans-serif;
   font-weight: 400;
@@ -139,18 +212,23 @@
 .address-text {
   font-family: "OswaldNew", sans-serif;
   display: flex;
-  padding: 20px;
 }
 .address-text__text-capital {
   font-family: "OswaldNew", sans-serif;
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
+  margin: 20px 0;
+  margin-left: 19px;
 }
 .address-text__text {
-  font-family: "OswaldNew", sans-serif;
+  font-family: "Arial", sans-serif;
+  color: #444444;
   font-weight: 400;
   font-size: 14px;
+  line-height: 20px;
+  margin: 20px 0;
+  margin-right: 19px;
 }
 .address__image {
   width: 100%;
@@ -183,4 +261,41 @@
 @font-face {
   font-family: "OswaldNew";
   src: url(/fonts/Oswald-VariableFont_wght.ttf) format("truetype");
+}
+.progress__button-text {
+  font-family: "OswaldNew";
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 9px;
+}
+.progress__button {
+  display: flex;
+  justify-content: center;
+}
+.progress__radiobutton {
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  width: 84px;
+  height: 14px;
+  background: #ffffff;
+  position: relative;
+  margin-bottom: 40px;
+}
+input {
+  display: none;
+}
+label::after {
+  content: "";
+  width: 35px;
+  height: 6px;
+  border-radius: 6px;
+  background: #68b738;
+  position: absolute;
+  top: 4px;
+  left: 6px;
+}
+label::before {
+  left: 37px;
 }
