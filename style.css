@@ -262,40 +262,47 @@
   font-family: "OswaldNew";
   src: url(/fonts/Oswald-VariableFont_wght.ttf) format("truetype");
 }
-.progress__button-text {
-  font-family: "OswaldNew";
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  margin: 0 9px;
+.toggle {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
 }
-.progress__button {
-  display: flex;
-  justify-content: center;
+.toggle + label {
+  --toggle-color: #CDCDCD;
+  --toggle-bg-color: #ffffff;
+  --toggle-tg-color: #68b738;
+  position: relative;
+    padding-left: 5rem;
+    line-height: 2.5rem;
+    cursor: pointer;
 }
-.progress__radiobutton {
-  border: 1px solid #cdcdcd;
-  border-radius: 6px;
+.toggle + label:before {
+  content: "";
+box-sizing: border-box;
+  position: absolute;
+  left: 0;
   width: 84px;
   height: 14px;
-  background: #ffffff;
-  position: relative;
-  margin-bottom: 40px;
+  border: 1px solid var(--toggle-color);
+  border-radius: 6px;
+  background-color: var(--toggle-bg-color);
+  transition: background-color 200ms;
 }
-input {
-  display: none;
-}
-label::after {
+.toggle + label:after {
   content: "";
+position: absolute;
+  top: 0px;
+  bottom: 26px;
+  left: 9px;
   width: 35px;
   height: 6px;
+  margin: auto;
+  transform: translate(0, 0);
   border-radius: 6px;
-  background: #68b738;
-  position: absolute;
-  top: 4px;
-  left: 6px;
+  background-color: var(--toggle-tg-color);
+  cursor: pointer;
+  transition: transform 200ms;
 }
-label::before {
-  left: 37px;
+.toggle:checked + label:after {
+    transform: translate(2rem, 0);
 }
