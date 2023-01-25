@@ -23,7 +23,6 @@
 .nav-page {
   display: flex;
 }
-
 .intro-page {
   display: flex;
   flex-direction: column;
@@ -51,10 +50,13 @@
   text-transform: uppercase;
   font-family: "OswaldNew", sans-serif;
 }
-.intro__image {
+.intro-page__image {
+  
+}
+.intro-page__image-image {
   position: relative;
 }
-.intro__image1 {
+.intro__image {
   position: absolute;
   top: 235px;
   margin: 20px;
@@ -83,6 +85,13 @@
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
+  width: 100px;
+}
+.product-item__text-slim {
+  display: flex;
+}
+.product-item__text-slim__image {
+  margin: 20px 0;
 }
 .product-item__text-capital {
   font-family: "OswaldNew", sans-serif;
@@ -152,7 +161,7 @@
   line-height: 18px;
   margin-top: 20px;
 }
-.example2 {
+.example-page {
   background-color: #f2f2f2;
 }
 .report-intro {
@@ -180,8 +189,20 @@
   margin: 5px;
 }
 .result-item__text-capital {
+  font-family: "OswaldNew", sans-serif;
   border: 1px solid #d9d9d9;
-  padding: 20px 5px;
+  padding: 14px 30px 17px 30px;
+  border-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  margin-right: 32px;
+}
+.result-item__text-capital-day {
+  font-family: "OswaldNew", sans-serif;
+  border: 1px solid #d9d9d9;
+  padding: 14px 16px 17px 16px;
   border-bottom: 0;
   text-transform: uppercase;
   font-weight: 400;
@@ -197,7 +218,19 @@
   font-size: 12px;
   line-height: 12px;
   position: absolute;
-  top: -45px;
+  top: -42px;
+  left: 27px;
+  color: #444444;
+}
+.result-item__text-day {
+  font-family: "Arial" sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  position: absolute;
+  top: -42px;
+  right: 33px;
+  color: #444444;
 }
 .progress__text {
   font-family: "OswaldNew", sans-serif;
@@ -268,19 +301,20 @@
   opacity: 0;
 }
 .toggle + label {
-  --toggle-color: #CDCDCD;
+  --toggle-color: #cdcdcd;
   --toggle-bg-color: #ffffff;
   --toggle-tg-color: #68b738;
   position: relative;
-    padding-left: 5rem;
-    line-height: 2.5rem;
-    cursor: pointer;
+  padding-left: 5rem;
+  line-height: 2.5rem;
+  cursor: pointer;
 }
 .toggle + label:before {
   content: "";
-box-sizing: border-box;
+  box-sizing: border-box;
   position: absolute;
   left: 0;
+  top: 2px;
   width: 84px;
   height: 14px;
   border: 1px solid var(--toggle-color);
@@ -290,10 +324,10 @@ box-sizing: border-box;
 }
 .toggle + label:after {
   content: "";
-position: absolute;
-  top: 0px;
+  position: absolute;
+  top: 25px;
   bottom: 26px;
-  left: 9px;
+  left: 7px;
   width: 35px;
   height: 6px;
   margin: auto;
@@ -304,5 +338,13 @@ position: absolute;
   transition: transform 200ms;
 }
 .toggle:checked + label:after {
-    transform: translate(2rem, 0);
+  transform: translate(35px, 0);
+}
+.progress__button {
+  text-align: center;
+  padding-bottom: 40px;
+}
+label {
+  font-family: "OswaldNew" sans-serif;
+  text-transform: uppercase;
 }
