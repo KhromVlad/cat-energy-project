@@ -51,10 +51,13 @@
   font-family: "OswaldNew", sans-serif;
 }
 .intro-page__image {
-  
+  background-color: #68B738;
+width: 320px;
+height: 302px;
 }
 .intro-page__image-image {
   position: relative;
+  opacity: 0.3;
 }
 .intro__image {
   position: absolute;
@@ -295,56 +298,62 @@
   font-family: "OswaldNew";
   src: url(/fonts/Oswald-VariableFont_wght.ttf) format("truetype");
 }
-.toggle {
-  position: absolute;
-  cursor: pointer;
+.toggler-page {
+  position: relative;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+.toggle.on {
+  width: 60px;
   opacity: 0;
 }
-.toggle + label {
-  --toggle-color: #cdcdcd;
-  --toggle-bg-color: #ffffff;
-  --toggle-tg-color: #68b738;
-  position: relative;
-  padding-left: 5rem;
-  line-height: 2.5rem;
-  cursor: pointer;
-}
-.toggle + label:before {
-  content: "";
-  box-sizing: border-box;
-  position: absolute;
-  left: 0;
-  top: 2px;
-  width: 84px;
-  height: 14px;
-  border: 1px solid var(--toggle-color);
-  border-radius: 6px;
-  background-color: var(--toggle-bg-color);
-  transition: background-color 200ms;
-}
-.toggle + label:after {
-  content: "";
-  position: absolute;
-  top: 25px;
-  bottom: 26px;
-  left: 7px;
-  width: 35px;
-  height: 6px;
-  margin: auto;
-  transform: translate(0, 0);
-  border-radius: 6px;
-  background-color: var(--toggle-tg-color);
-  cursor: pointer;
-  transition: transform 200ms;
-}
-.toggle:checked + label:after {
-  transform: translate(35px, 0);
-}
-.progress__button {
-  text-align: center;
-  padding-bottom: 40px;
+.toggle.off {
+  width: 100px;
+  opacity: 0;
 }
 label {
-  font-family: "OswaldNew" sans-serif;
+  font-family: "OswaldNew", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+}
+.radiobutton::after {
+  content: "";
+  position: absolute;
+  cursor: pointer;
+  width: 35px;
+  height: 10px;
+  border-radius: 25px;
+  left: 115px;
+  top: 4px;
+}
+.radiobuttoff::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 10px;
+  border-radius: 25px;
+  left: 156px;
+  cursor: pointer;
+  top: 4px;
+}
+input[type="radio"]:checked + label::after,
+input[type="radio"]:checked + label::before {
+  background-color: #68b738;
+  z-index: 99;
+}
+.tor {
+  position: absolute;
+  top: 2px;
+  left: 110px;
+  width: 84px;
+  height: 12px;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  background: #ffffff;
+  z-index: 9;
 }
