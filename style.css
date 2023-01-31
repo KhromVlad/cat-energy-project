@@ -23,6 +23,12 @@
 .nav-page {
   display: flex;
 }
+.main-page {
+  margin: 10px 0;
+}
+.main-content {
+  padding: 10px 0;
+}
 .intro-page {
   display: flex;
   flex-direction: column;
@@ -273,6 +279,7 @@ height: 302px;
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #d9d9d9;
+  margin: 10px;
 }
 .footer-logo__image {
   margin: 40px auto;
@@ -280,19 +287,23 @@ height: 302px;
 .footer-social {
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid #d9d9d9;
+  
+  margin: 50px;
 }
 .footer-social__image {
-  margin: 57px 20px;
+  margin: 0 20px;
 }
 .footer-tag {
   display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px solid #d9d9d9;
 }
 .footer-tag__text {
-  margin: 35px 60px 30px 19px;
+  
 }
 .footer-tag__image {
-  margin: 30px 20px 30px 80px;
+  
 }
 @font-face {
   font-family: "OswaldNew";
