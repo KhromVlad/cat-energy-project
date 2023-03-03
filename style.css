@@ -383,7 +383,7 @@
   .container {
     margin: 0 auto;
     width: 768px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   .nav-page {
     justify-content: space-around;
@@ -555,8 +555,8 @@
   }
 
   .example-page {
-    background-color: #ffffff;
-    margin: 0 30px;
+    /* background: linear-gradient(black 30%, #eaeaea 30% 100%);
+    margin: 0 30px; */
   }
   .report {
     background-color: #ffffff;
